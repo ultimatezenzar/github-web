@@ -3,28 +3,28 @@
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>Learning Github</title>
-        <meta name="description" content="Github for Web Designers is the companion reference for the lynda.com course of the same name">
-        <meta name="viewport" content="width=device-width">
-        <link rel="stylesheet" href="_css/main.css">
-        <script src="_scripts/modernizr-custom.js"></script>
-    </head>
-    <body>
-    <header>
-	<h1><span aria-hidden="true" data-icon="&#xE087;" class="github-icon"></span> Github for Web Designers</h1>
-    </header>
-    <nav id="pageNav" role="navigation">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Learning Github</title>
+  <meta name="description" content="Github for Web Designers is the companion reference for the lynda.com course of the same name">
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="_css/main.css">
+  <script src="_scripts/modernizr-custom.js"></script>
+</head>
+<body>
+  <header>
+    <h1><span aria-hidden="true" data-icon="&#xE087;" class="github-icon"></span> Github for Web Designers</h1>
+  </header>
+  <nav id="pageNav" role="navigation">
     <ul>
-    <li><a href="index.html" title="concepts">Concepts</a></li>
-    <li><a href="reference.html" title="Git reference" class="current">Reference</a></li>
-    <li><a href="glossary.html" title="glossary">Glossary</a></li>
-    <li><a href="resources.html" title="resources">Resources</a></li>
+      <li><a href="index.html" title="concepts">Concepts</a></li>
+      <li><a href="reference.html" title="Git reference" class="current">Reference</a></li>
+      <li><a href="glossary.html" title="glossary">Glossary</a></li>
+      <li><a href="resources.html" title="resources">Resources</a></li>
     </ul>
-    </nav>
-    <main>
+  </nav>
+  <main>
     <h2>Git Quick Reference</h2>
     <p>As I was learning Git one of the things that frustrated me the most was how references and tutorials would either assume you would know exactly what a command meant or would simply show you a command to enter without explaining what it was doing. Because of this I wanted it to create a quick reference for common Git commands. This list is by no means exhaustive, but it should provide you with a solid reference to the most common commands you encounter.</p>
     <h3>Installation</h3>
@@ -40,17 +40,19 @@
     <pre><code>git config --help</code></pre>
     <p>Will list available config options.</p>
     <h5>Setting the default editor</h5>
-      <pre><code>git config --global core.editor &lt;tool&gt;</code></pre>
+    <pre><code>git config --global core.editor &lt;tool&gt;</code></pre>
     <p>If you want to use a different editor than Vim or Vi you can set that by adding your tool of choice here.</p>
     <h4>Global ignore file</h4>
     <pre><code>git config --global core.excludesfile ~/.gitignore_global</code></pre>
     <p>.gitignore files can help you decide which files are tracked or not in local repositories. However if you ever want files to be ignored globally across all repositories you can use this command. Just create a plain text file, name it what you&rsquo;d like and point to it after the core.excludesfile command. Here the example &ldquo;.gitignore_global&rdquo; is used. Github has a link to common configurations that can help get you started.</p>
     <h4>Setting aliases</h4> 
-<pre><code>git config --global alias.ci commit
+    <pre><code>
+git config --global alias.ci commit
 git config --global alias.st status
 git config --global alias.co checkout
 git config --global alias.br branch
-git config --global alias.mr merge</code></pre>
+git config --global alias.mr merge
+    </code></pre>
     <p>If you want to save some time typing, you can create aliases for common commands. After setting these typing in the alias is the same as typing in the command itself. Above is a list of common aliases although you&rsquo;re free to create your own. Simply add the alias you want after the &ldquo;alias.&rdquo; command and then type the command it represents.</p>
     <h3>Starting a project</h3>
     <h4>Clone</h4>
@@ -68,7 +70,7 @@ git config --global alias.mr merge</code></pre>
     <h3>Staging and committing</h3>
     <h4>Status</h4>
     <p>
-      Gives the current status of a repository and its files.</p>
+    Gives the current status of a repository and its files.</p>
     <pre><code>git status</code></pre>
     <p>Displays the current state of the repository</p>
     <pre><code>git status -s</code></pre>
@@ -201,28 +203,28 @@ git config --global alias.mr merge</code></pre>
     <pre><code>git-push [remote] [branch]</code></pre>
     <p>Pushes the contents of the specified branch to the remote&rsquo;s version of that branch.</p>
     <pre><code>git push [remote] :[branch]</code></pre>
-Deletes the specified branch on the remote server.    </main>
-    <footer>
+    Deletes the specified branch on the remote server.    </main>
+  <footer>
     <p>&copy; James Williamson &amp; <a href="http://www.lynda.com" title="lynda.com">lynda.com</a></p>
     <p class="license"><span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Text" property="dct:title" rel="dct:type">Github for Web Designers</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="http://www.lynda.com" property="cc:attributionName" rel="cc:attributionURL">James Williamson</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>. <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" class="img"><br /><img alt="Creative Commons License" src="http://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a></p>
-    </footer>
-        <script>
+  </footer>
+  <script>
 //use the modernizr load to load up external scripts. This will load the scripts asynchronously, but the order listed matters. Although it will load all scripts in parallel, it will execute them in the order listed
 Modernizr.load([
-{
-    load: [  
+    {
+      load: [  
         'http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js',
-		'_scripts/scripts.js' 
-		//additional scripts can be loaded here, separate with a comma in the order you wish them to execute 
-    ]
-},
-{
-	// test for media query support, if not load respond.js
-    test : Modernizr.mq('only all'),
-    // If not, load the respond.js file
-    nope : '_scripts/respond.min.js' 
-}
+        '_scripts/scripts.js' 
+          //additional scripts can be loaded here, separate with a comma in the order you wish them to execute 
+      ]
+    },
+    {
+      // test for media query support, if not load respond.js
+      test : Modernizr.mq('only all'),
+      // If not, load the respond.js file
+      nope : '_scripts/respond.min.js' 
+    }
 ]); 
-</script>
-    </body>
+  </script>
+</body>
 </html>
